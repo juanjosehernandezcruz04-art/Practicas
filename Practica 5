@@ -1,0 +1,21 @@
+print("Ingresa tu nombre")
+nombre = input ()
+print("Ingresa tu peso")
+peso = input ()
+print("ingresa tu altura")
+altura = input ()
+promp = peso * altura
+
+print("{nombre} tu peso es de {peso} y tu altura es de {altura} entonces tu masa corporal es de {promp}")
+
+if {promp}> 30:
+  print("bajale a los tamales tantito")
+
+elif {promp}> 25:
+  print("bueno no estas tan mal, pero si trata de comer menos o mas saludable")
+
+elif {promp}> 18:
+  print("estas bien de peso amigo o amiga 👌")
+
+else {promp}< 10:
+  print("amigo come algo, porque estas demasiado ligero neta come algo")
