@@ -1,0 +1,67 @@
+print("---CALCULADORA---")
+while True:
+  print("Menu")
+  print("1-Suma")
+  print("2-Resta")
+  print("3-Multiplicacion")
+  print("4-Division")
+  print("5-Salir")
+
+  opcion=input("que operacion vas a elegir")
+
+  if opcion == "1":
+    print("Elegiste suma")
+    print("Ingesa el primer numero")
+    numero1=input()
+    print("Ingresa el segundo numero")
+    numero2=input()
+    resultado=int(numero1)+int(numero2)
+    print("El resultado es", resultado)
+    break;
+
+  elif opcion == "2":
+    print("Elegiste resta")
+    print("Ingesa el primer numero")
+    numero1=input()
+    print("Ingresa el segundo numero")
+    numero2=input()
+    resultado=int(numero1)-int(numero2)
+    print("El resultado es", resultado)
+    break;
+    break;
+
+  elif opcion == "3":
+    print("Elegiste multiplicacion")
+    print("Ingesa el primer numero")
+    numero1=input()
+    print("Ingresa el segundo numero")
+    numero2=input()
+    resultado=int(numero1)*int(numero2)
+    print("El resultado es", resultado)
+    break;
+    break;
+
+  elif opcion == "4":
+    print("Elegiste division")
+    print("Ingesa el primer numero")
+    numero1=input()
+    print("Ingresa el segundo numero")
+    numero2=input()
+    resultado=int(numero1)/int(numero2)
+    print("El resultado es", resultado)
+    break;
+    break;
+
+  elif opcion == "5":
+    print("Elegiste salir")
+    break;
+
+  else:
+    print("opcion invalida")
+
+continuar = input ("quieres hacer otra operacion, (si/no): ").lower()
+if continuar == "si":
+  continuar
+else:
+  print("gracias por usar la calculadora")
+  break;
