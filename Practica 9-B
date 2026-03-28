@@ -1,0 +1,39 @@
+class Estudiante:
+    def __init__(self, nombre, edad, matricula, inscripcion):
+        self.nombre = nombre
+        self.edad = edad
+        self.matricula = matricula
+        self.inscripcion = inscripcion 
+
+    def asignar_grupo(self, grupo, profesor):
+        self.grupo = grupo
+        self.profesor = profesor
+
+    def agregar_calificaciones(self, materia, calificacion):
+        self.materia = materia
+        self.profesor = profesor
+        self.calificacion = calificacion
+
+    def mostrar_datos(self):
+        print("=============================================================")
+        print("Bien tu registro es este:")
+        print(f"nombre = {self.nombre}")
+        print(f"edad = {self.edad}")
+        print(f"matricula = {self.matricula}")
+        print(f"grupo = {self.grupo}")
+        print(f"calificacion en la materia de {self.materia} con el profesor {self.profesor} es de {self.calificacion}")
+        print("=============================================================")
+
+nombre = input("ingresa tu nombre:")
+edad = input("ingresa tu edad:")
+matricula = input("ingresa tu matricula:")
+inscripcion = input("cuando fue tu inscripcion?")
+grupo = input("ingresa el grupo en el que estas:")
+materia = input("que materia quieres registrar?")
+profesor = input("quien les da la materia?")
+calificacion = input("ingresa tu calificacion:")
+
+estudiante = Estudiante(nombre, edad, matricula, inscripcion )
+estudiante.asignar_grupo(grupo, profesor)
+estudiante.agregar_calificaciones(materia, calificacion)
+estudiante.mostrar_datos()
