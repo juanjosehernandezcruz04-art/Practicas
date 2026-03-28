@@ -1,0 +1,45 @@
+class SistemaEscolar:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+    def asignar_estudiante(self, matricula):
+        self.matricula = matricula
+
+    def asignar_profesor(self, especialidad):
+        self.especialidad = especialidad
+
+    def asignar_curso(self, nombrecurso, grupo):
+        self.nombrecurso = nombrecurso
+        self.grupo = grupo
+
+    def asignar_materia(self, nombremateria, clave):
+        self.nombremateria= nombremateria
+        self.clave = clave
+
+nombre = input("ingresa tu nombre:")
+edad = input("ingresa tu edad:")
+matricula = input("ingresa tu matricula:")
+especialidad = input("ingresa la especialidad de estudias:")
+nombrecurso = input("ingresa el nombre del que da el curso:")
+grupo = input("ingresa el grupo en el que estas:")
+nombremateria = input("ingresa el nombre de la materia:")
+clave = input("ingresa la clave que te dieron:")
+
+persona = SistemaEscolar(nombre, edad)
+persona.asignar_estudiante(matricula)
+persona.asignar_profesor(especialidad)
+persona.asignar_curso(nombrecurso, grupo)
+persona.asignar_materia(nombremateria, clave)
+
+print("========================================")
+print("Los datos registrados son:")
+print(f"Nombre = {persona.nombre}")
+print(f"Edad = {persona.edad}")
+print(f"Matricula = {persona.matricula}") 
+print(f"Especialidad = {persona.especialidad}")
+print(f"Nombre del curso = {persona.nombrecurso}")
+print(f"Grupo = {persona.grupo}")
+print(f"Materia = {persona.nombremateria}")
+print(f"Clave = {persona.clave}")
+print("========================================")
