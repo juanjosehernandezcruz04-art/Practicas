@@ -1,0 +1,53 @@
+class cajero: # aqui definimos nuestra clase
+  def __init__(self, saldo_inicial): # generamos un metodo constructor
+   if saldo__inicial > 10000:
+    self.saldo = saldo_inicial
+else:
+  print("El saldo debe ser mayor a $10,000")
+  self.saldo = 10001
+  print("se asigno $10,001 como saldo inicial")
+
+def depositar(self, monto):
+if monto > 0:
+  self.saldo += monto
+  else:
+    print("El monto debe ser mayor a 0")
+
+
+def retirar(self, monto):
+  if monto <= 0 :
+    print("el monto debe de ser mayor a 0")
+elif self.saldo - monto < 10000:
+  print("no se puede retirar esa cantidad")
+else:
+  self.saldo -= monto
+  print(f"retiraste ${monto}.saldo")
+
+def mostrar_saldo(self):
+  saldo_iicial = float(input("ingresa el saldo inicial: "))
+  cajero1 = cajero(saldo_inicial)
+
+  while True:
+    print("1. Depositar")
+    print("2. Retirar")
+    print("3. Mostrar Saldo")
+    print("4. Salir")
+
+    opcion = input("Elige una opción: ")
+    if opcion == "1":
+      saldo = float(input("Ingresa el monto a depositar: "))
+      cuenta.depositar(cantidad)
+
+    elif opcion == "2":
+      saldo = float(input("Ingresa el monto a retirar: "))
+      cuenta.retirar(cantidad)
+
+    elif opcion == "3":
+      cuenta.mostrar_saldo()
+
+    elif opcion == "4":
+      print("HASTA LUEGO")
+      break
+
+    else:
+      print("Opción inválida. Por favor, elige una opción válida.")
