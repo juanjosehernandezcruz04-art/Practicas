@@ -1,0 +1,20 @@
+class Estudiante:
+    def_init_(self, nombre, edad, matricula):
+        self.nombre = nombre
+        self.edad = edad
+        self.matricula = matricula
+
+    def asignar_grupo(self, grupo):
+        self.grupo = grupo
+
+    def agregar_calificaciones(self, materia, calificacion):
+        self.materia = materia
+        self.calificacion = calificacion
+
+    def mostrar_datos(self):
+        print(f"nombre: {self.nombre}")
+        print(f"edad: {self.edad}")
+        print(f"matricula: {self.matricula}")
+        print(f"grupo: {self.grupo}")
+        print(f"materia: {self.materia}")
+        print(f"calificacion: {self.calificacion}")
