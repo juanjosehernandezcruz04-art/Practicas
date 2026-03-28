@@ -1,0 +1,19 @@
+class Estudiantes410:
+    def __init__(self, nombre, edad, calificacion):
+        self.nombre = nombre
+        self.edad = edad
+        self.calificacion = calificacion
+
+    def mostrar_datos(self):
+        print(f"nombre: {self.nombre}")
+        print(f"edad: {self.edad}")
+        print(f"calificacion: {self.calificacion}")
+        print("=" * 30)
+
+
+print("Hola bienvenido a la clase estudiantes 410")
+print("Quieres saber informacion sobre los alumnos? cual de todos?")
+print("=" * 30)
+
+alumno1 = Estudiantes410("yenifer",15,8.9)
+alumno2 = Estudiantes410("salvador",16,9.3)
